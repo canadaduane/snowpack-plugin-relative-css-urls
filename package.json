@@ -1,0 +1,28 @@
+{
+  "name": "snowpack-plugin-relative-css-urls",
+  "version": "1.0.0",
+  "description": "A snowpack plugin that lets you use relative asset URLs in your CSS",
+  "main": "plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canadaduane/snowpack-plugin-relative-css-urls.git"
+  },
+  "keywords": [
+    "snowpack",
+    "plugin",
+    "url",
+    "css",
+    "components",
+    "snowpack-plugin"
+  ],
+  "author": "Duane Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canadaduane/snowpack-plugin-relative-css-urls/issues"
+  },
+  "homepage": "https://github.com/canadaduane/snowpack-plugin-relative-css-urls#readme",
+  "dependencies": {
+    "replace-css-url": "^1.2.6"
+  },
+  "scripts": {}
+}
