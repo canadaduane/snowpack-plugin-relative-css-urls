@@ -7,8 +7,7 @@ const pkg = require("./package.json");
 module.exports = function plugin(snowpackConfig, options) {
   return {
     name: pkg.name,
-    async transform(params) {
-      const { id, contents, isDev, fileExt } = params;
+    async transform({ id, contents, isDev, fileExt }) {
       if (fileExt === ".css") {
         let relativePath;
         for (const [dirDisk, dirUrl] of Object.entries(snowpackConfig.mount)) {
