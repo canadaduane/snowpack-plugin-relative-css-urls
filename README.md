@@ -26,6 +26,8 @@ This has also been tested with [Svelte](https://svelte.dev) via [@snowpack/plugi
 
 ## Usage
 
+Requires Snowpack v2.15.0+
+
 ### Install
 
 ```bash
