@@ -12,7 +12,7 @@ module.exports = function plugin(snowpackConfig, options) {
         let relativePath;
         for (const [dirDisk, dirUrl] of Object.entries(snowpackConfig.mount)) {
           if (id.startsWith(dirDisk)) {
-            relativePath = path.dirname(id.replace(dirDisk, dirUrl));
+            relativePath = path.dirname(id.replace(dirDisk, dirUrl.url));
           }
         }
 
