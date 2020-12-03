@@ -12,7 +12,7 @@ module.exports = function plugin(snowpackConfig, options) {
         let relativePath;
         for (const [dirDisk, dirUrl] of Object.entries(snowpackConfig.mount)) {
           if (id.startsWith(dirDisk)) {
-            relativePath = path.dirname(id.replace(dirDisk, dirUrl.url));
+            relativePath = path.dirname(id.replace(dirDisk, dirUrl.url)).split(path.sep).join(path.posix.sep);
           }
         }
 
@@ -26,7 +26,7 @@ module.exports = function plugin(snowpackConfig, options) {
               // don't touch absolute URLs
               return url;
             } else {
-              return path.join(relativePath, url);
+              return path.join(relativePath, url).split(path.sep).join(path.posix.sep);
             }
           });
           return newContents;
