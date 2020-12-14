@@ -1,6 +1,6 @@
 {
   "name": "snowpack-plugin-relative-css-urls",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A snowpack plugin that lets you use relative asset URLs in your CSS",
   "main": "plugin.js",
   "repository": {
