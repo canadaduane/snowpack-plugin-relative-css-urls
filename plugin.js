@@ -21,6 +21,7 @@ module.exports = function plugin(snowpackConfig, options) {
             if (
               url.startsWith("http") ||
               url.startsWith("//") ||
+              url.startsWith("data:") ||
               path.isAbsolute(url)
             ) {
               // don't touch absolute URLs
